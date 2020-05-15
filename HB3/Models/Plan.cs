@@ -32,7 +32,6 @@ namespace HB3.Models
 
         public List<Operation> Operations { get; set; }
 
-
         public int UserId { get; set; }
         public User User { get; set; }
     }

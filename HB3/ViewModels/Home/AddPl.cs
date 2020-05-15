@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HB3.Controllers
+namespace HB3.ViewModels.Home
 {
-    public class ArhivController
+    public class AddPl
     {
     }
 }

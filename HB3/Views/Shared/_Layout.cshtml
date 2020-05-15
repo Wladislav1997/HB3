@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HB2</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HB</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,16 +20,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Operation" asp-route-st="выполняются">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OpAc">Совершить</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Filter">Архив</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Планы</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Plan" asp-route-st="выполняются">Выполняются</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Plan" asp-route-st="ожидают">Ожидают</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Plan" asp-route-st="выполнены">Выполнены</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Plan">Все</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Plan">Планы</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Операции</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Operation" asp-route-st="выполняются">Выполняются</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Operation" asp-route-st="ожидают">Ожидают</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Operation" asp-route-st="выполнены">Выполнены</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Operation" >Все</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Сменить пользователя</a>

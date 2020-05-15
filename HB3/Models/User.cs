@@ -11,7 +11,6 @@ namespace HB3.Models
         public string Password { get; set; }
         public int Id { get; set; }
 
-
         public List<P1> P1s { get; set; }
         public List<Plan> Plans { get; set; }
     }

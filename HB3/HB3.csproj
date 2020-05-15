@@ -13,8 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\Arhiv\" />
-    <Folder Include="Views\Arhiv\" />
+    <Folder Include="ViewModels\Add\" />
+    <Folder Include="ViewModels\Del\" />
+    <Folder Include="ViewModels\Det\" />
+    <Folder Include="ViewModels\Red\" />
   </ItemGroup>
 
 

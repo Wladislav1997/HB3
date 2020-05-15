@@ -35,7 +35,7 @@ namespace HB2.Controllers
                 {
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Operation", "Home", new {st="выполняются"});
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
